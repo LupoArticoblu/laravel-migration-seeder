@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             /*
-            reference
             Azienda
             Stazione di partenza
             Stazione di arrivo
@@ -28,7 +27,6 @@ return new class extends Migration
             Cancellato
             */
 
-            $table->string('reference',12);
             $table->string('azienda',120);
             $table->string('stazione_di_partenza',120);
             $table->string('stazione_di_arrivo',120);
